@@ -1,0 +1,384 @@
+﻿/* Container principal */
+.product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Botão Criar Produto */
+.create-btn {
+  background: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  transition: background 0.2s ease;
+}
+
+.create-btn:hover {
+  background: #218838;
+}
+
+/* Lista de produtos */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Card de produto */
+.product-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-card p {
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-card button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+  align-self: center;
+}
+
+.product-card button:hover {
+  background: #0056b3;
+}
+
+/* Página de detalhe */
+.product-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+/* Detalhes do produto */
+.product-detail {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.detail-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detail-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detail-info h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.detail-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.detail-actions button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.detail-actions button:hover {
+  background: #0056b3;
+}
+
+.detail-actions button:nth-child(2) {
+  background: #dc3545;
+}
+
+.detail-actions button:nth-child(2):hover {
+  background: #c82333;
+}
+
+.detail-actions button:nth-child(3) {
+  background: #6c757d;
+}
+
+.detail-actions button:nth-child(3):hover {
+  background: #545b62;
+}
+
+/* Formulário de edição */
+.edit-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-form label {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.edit-form button {
+  background: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: background 0.2s ease;
+}
+
+.edit-form button:hover {
+  background: #218838;
+}
+
+.edit-form button:last-child {
+  background: #6c757d;
+  margin-right: 0;
+}
+
+.edit-form button:last-child:hover {
+  background: #545b62;
+}
+
+/* Página de criação */
+.create-product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.create-form {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.create-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-form label {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.create-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.create-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+.create-form button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+}
+
+.create-form button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.create-form button[type="button"] {
+  background: #6c757d;
+  color: #fff;
+}
+
+.create-form button[type="button"]:hover {
+  background: #545b62;
+}
+
+/* Estados de loading e erro */
+.loading, .error {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Grupo de botões */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product-container {
+    padding: 10px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-detail {
+    padding: 20px;
+  }
+
+  .detail-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .detail-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .create-form {
+    padding: 20px;
+  }
+
+  .edit-form {
+    max-width: 100%;
+  }
+
+  /* Botões responsivos gerais */
+  .create-btn {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-card button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .edit-form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .create-form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
